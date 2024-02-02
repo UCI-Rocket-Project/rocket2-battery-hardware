@@ -326,6 +326,30 @@
     [
       "453543af-7e3c-49a0-a644-4bd49c4f86f8",
       ""
+    ],
+    [
+      "a9e32f45-e2eb-48cf-a7f9-7bedc8d925bf",
+      "Single-Cell-Charger"
+    ],
+    [
+      "353f4db0-8115-4c24-a632-6a043c6847b5",
+      "Single-Cell-Charger1"
+    ],
+    [
+      "f3a6411d-fb1d-4837-a6de-b74ae1f1a96c",
+      "Single-Cell-Charger2"
+    ],
+    [
+      "b17bc1f0-00f5-4207-bf92-ef7f43c361e6",
+      "Single-Cell-Charger3"
+    ],
+    [
+      "9511d0eb-6ca7-4945-a6c9-56e27962d3ed",
+      "Single-Cell-Charger4"
+    ],
+    [
+      "771af3e6-8a40-4ded-b6c1-1f6c75fa6bde",
+      "Single-Cell-Charger5"
     ]
   ],
   "text_variables": {}
