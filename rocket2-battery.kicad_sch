@@ -3118,7 +3118,7 @@
     (property "Reference" "U1" (at 157.47 149.86 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "~" (at 157.47 161.29 0)
+    (property "Value" "3V3 LDO" (at 157.47 161.29 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_SO:TSOP-5_1.65x3.05mm_P0.95mm" (at 157.47 161.29 0)
