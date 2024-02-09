@@ -1,0 +1,103 @@
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'darwin'
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]'
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: (7.0.0-0)
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x121f8c820>
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with U8 as a reference
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'U8'
+Located on: ['Single-Cell-Charger2']
+With filenames: ['single-cell-charger.kicad_sch']
+With sheet_id:['Single-Cell-Charger2']
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
+[('U12', ['Single-Cell-Charger4']), ('U10', ['Single-Cell-Charger3']), ('U4', ['Single-Cell-Charger']), ('U14', ['Single-Cell-Charger5']), ('U6', ['Single-Cell-Charger1']), ('U8', ['Single-Cell-Charger2'])]
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Single-Cell-Charger2', file:'single-cell-charger.kicad_sch'
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Single-Cell-Charger'], ['Single-Cell-Charger1'], ['Single-Cell-Charger3'], ['Single-Cell-Charger4'], ['Single-Cell-Charger5']]
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Single-Cell-Charger2']
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(1291, 134)
+02-08 19:44:09 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(852, 134)
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Single-Cell-Charger2', file:'single-cell-charger.kicad_sch'
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Single-Cell-Charger'], ['Single-Cell-Charger1'], ['Single-Cell-Charger3'], ['Single-Cell-Charger4'], ['Single-Cell-Charger5']]
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 240:Replicating layout
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 240:Starting replication of sheets: [['Single-Cell-Charger3'], ['Single-Cell-Charger4'], ['Single-Cell-Charger5']]
+on level: ['Single-Cell-Charger2']
+with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=False, locked footprints=False, group_only=False
+02-08 19:44:23 root 332:updating GUI message: 'Preparing for replication'
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 310:Getting the list of source footprints
+02-08 19:44:23 root 337:updating GUI with: 0
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 320:Getting the list of all the remaining footprints
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source tracks
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source zones
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source text items
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 339:Getting source drawing items
+02-08 19:44:23 root 332:updating GUI message: 'Replicating footprints'
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 806:Replicating footprints
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Single-Cell-Charger3']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Single-Cell-Charger4']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Single-Cell-Charger5']
+02-08 19:44:23 root 332:updating GUI message: 'Replicating tracks'
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 977:Replicating tracks
+02-08 19:44:23 root 337:updating GUI with: 0
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Single-Cell-Charger3']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Single-Cell-Charger3'] :[('unconnected-(U8-Pad8)', 'unconnected-(U10-Pad8)'), ('/Single-Cell-Charger1/ISO_GND', '/Single-Cell-Charger2/ISO_GND'), ('Net-(D10-A)', 'Net-(D12-A)'), ('', ''), ('Net-(U9-ISET)', 'Net-(U11-ISET)'), ('+24V', '+24V'), ('GND', 'GND'), ('unconnected-(U8-~{ON}{slash}OFF-Pad3)', 'unconnected-(U10-~{ON}{slash}OFF-Pad3)'), ('Net-(JP3-B)', 'Net-(JP4-B)'), ('Net-(D10-K)', 'Net-(D12-K)'), ('Net-(D9-K)', 'Net-(D11-K)'), ('Net-(D9-A)', 'Net-(D11-A)'), ('Net-(U9-VSET)', 'Net-(U11-VSET)'), ('/Single-Cell-Charger2/ISO_5V', '/Single-Cell-Charger3/ISO_5V'), ('/Single-Cell-Charger2/ISO_GND', '/Single-Cell-Charger3/ISO_GND'), ('Net-(R29-Pad1)', 'Net-(R35-Pad1)'), ('unconnected-(U8-Pad5)', 'unconnected-(U10-Pad5)')]
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Single-Cell-Charger4']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Single-Cell-Charger4'] :[('/Single-Cell-Charger2/ISO_5V', '/Single-Cell-Charger4/ISO_5V'), ('/Single-Cell-Charger2/ISO_GND', '/Single-Cell-Charger4/ISO_GND'), ('Net-(D10-A)', 'Net-(D14-A)'), ('', ''), ('+24V', '+24V'), ('Net-(U9-VSET)', 'Net-(U13-VSET)'), ('GND', 'GND'), ('Net-(R29-Pad1)', 'Net-(R41-Pad1)'), ('Net-(D10-K)', 'Net-(D14-K)'), ('/Single-Cell-Charger1/ISO_GND', '/Single-Cell-Charger3/ISO_GND'), ('Net-(D9-A)', 'Net-(D13-A)'), ('unconnected-(U8-~{ON}{slash}OFF-Pad3)', 'unconnected-(U12-~{ON}{slash}OFF-Pad3)'), ('Net-(JP3-B)', 'Net-(JP5-B)'), ('Net-(U9-ISET)', 'Net-(U13-ISET)'), ('Net-(D9-K)', 'Net-(D13-K)'), ('unconnected-(U8-Pad8)', 'unconnected-(U12-Pad8)'), ('unconnected-(U8-Pad5)', 'unconnected-(U12-Pad5)')]
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['Single-Cell-Charger5']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Single-Cell-Charger5'] :[('Net-(U9-VSET)', 'Net-(U15-VSET)'), ('unconnected-(U8-Pad8)', 'unconnected-(U14-Pad8)'), ('Net-(R29-Pad1)', 'Net-(R47-Pad1)'), ('Net-(JP3-B)', 'Net-(JP6-B)'), ('', ''), ('+24V', '+24V'), ('Net-(D10-K)', 'Net-(D16-K)'), ('GND', 'GND'), ('/Single-Cell-Charger2/ISO_5V', '/Single-Cell-Charger5/ISO_5V'), ('Net-(D9-A)', 'Net-(D15-A)'), ('unconnected-(U8-Pad5)', 'unconnected-(U14-Pad5)'), ('/Single-Cell-Charger2/ISO_GND', 'GND'), ('Net-(D10-A)', 'Net-(D16-A)'), ('unconnected-(U8-~{ON}{slash}OFF-Pad3)', 'unconnected-(U14-~{ON}{slash}OFF-Pad3)'), ('Net-(D9-K)', 'Net-(D15-K)'), ('/Single-Cell-Charger1/ISO_GND', '/Single-Cell-Charger4/ISO_GND'), ('Net-(U9-ISET)', 'Net-(U15-ISET)')]
+02-08 19:44:23 root 332:updating GUI message: 'Replicating zones'
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1047:Replicating zones
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Single-Cell-Charger3']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Single-Cell-Charger3'] :[('unconnected-(U8-Pad8)', 'unconnected-(U10-Pad8)'), ('/Single-Cell-Charger1/ISO_GND', '/Single-Cell-Charger2/ISO_GND'), ('Net-(D10-A)', 'Net-(D12-A)'), ('', ''), ('Net-(U9-ISET)', 'Net-(U11-ISET)'), ('+24V', '+24V'), ('GND', 'GND'), ('unconnected-(U8-~{ON}{slash}OFF-Pad3)', 'unconnected-(U10-~{ON}{slash}OFF-Pad3)'), ('Net-(JP3-B)', 'Net-(JP4-B)'), ('Net-(D10-K)', 'Net-(D12-K)'), ('Net-(D9-K)', 'Net-(D11-K)'), ('Net-(D9-A)', 'Net-(D11-A)'), ('Net-(U9-VSET)', 'Net-(U11-VSET)'), ('/Single-Cell-Charger2/ISO_5V', '/Single-Cell-Charger3/ISO_5V'), ('/Single-Cell-Charger2/ISO_GND', '/Single-Cell-Charger3/ISO_GND'), ('Net-(R29-Pad1)', 'Net-(R35-Pad1)'), ('unconnected-(U8-Pad5)', 'unconnected-(U10-Pad5)')]
+02-08 19:44:23 root 337:updating GUI with: 33
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Single-Cell-Charger4']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Single-Cell-Charger4'] :[('/Single-Cell-Charger2/ISO_5V', '/Single-Cell-Charger4/ISO_5V'), ('/Single-Cell-Charger2/ISO_GND', '/Single-Cell-Charger4/ISO_GND'), ('Net-(D10-A)', 'Net-(D14-A)'), ('', ''), ('+24V', '+24V'), ('Net-(U9-VSET)', 'Net-(U13-VSET)'), ('GND', 'GND'), ('Net-(R29-Pad1)', 'Net-(R41-Pad1)'), ('Net-(D10-K)', 'Net-(D14-K)'), ('/Single-Cell-Charger1/ISO_GND', '/Single-Cell-Charger3/ISO_GND'), ('Net-(D9-A)', 'Net-(D13-A)'), ('unconnected-(U8-~{ON}{slash}OFF-Pad3)', 'unconnected-(U12-~{ON}{slash}OFF-Pad3)'), ('Net-(JP3-B)', 'Net-(JP5-B)'), ('Net-(U9-ISET)', 'Net-(U13-ISET)'), ('Net-(D9-K)', 'Net-(D13-K)'), ('unconnected-(U8-Pad8)', 'unconnected-(U12-Pad8)'), ('unconnected-(U8-Pad5)', 'unconnected-(U12-Pad5)')]
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['Single-Cell-Charger5']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 750:Significant difference between src net: ['', 'Single-Cell-Charger2', 'ISO_GND'] and dst net: ['GND'], with src_net_depth=3, dst_net_depth=1, src_fp_depth=1, dst_fp_depth=1, match level 0.60
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['Single-Cell-Charger5'] :[('Net-(U9-VSET)', 'Net-(U15-VSET)'), ('unconnected-(U8-Pad8)', 'unconnected-(U14-Pad8)'), ('Net-(R29-Pad1)', 'Net-(R47-Pad1)'), ('Net-(JP3-B)', 'Net-(JP6-B)'), ('', ''), ('+24V', '+24V'), ('Net-(D10-K)', 'Net-(D16-K)'), ('GND', 'GND'), ('/Single-Cell-Charger2/ISO_5V', '/Single-Cell-Charger5/ISO_5V'), ('Net-(D9-A)', 'Net-(D15-A)'), ('unconnected-(U8-Pad5)', 'unconnected-(U14-Pad5)'), ('/Single-Cell-Charger2/ISO_GND', 'GND'), ('Net-(D10-A)', 'Net-(D16-A)'), ('unconnected-(U8-~{ON}{slash}OFF-Pad3)', 'unconnected-(U14-~{ON}{slash}OFF-Pad3)'), ('Net-(D9-K)', 'Net-(D15-K)'), ('/Single-Cell-Charger1/ISO_GND', '/Single-Cell-Charger4/ISO_GND'), ('Net-(U9-ISET)', 'Net-(U15-ISET)')]
+02-08 19:44:23 root 332:updating GUI message: 'Replicating text'
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1136:Replicating text
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Single-Cell-Charger3']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Single-Cell-Charger4']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['Single-Cell-Charger5']
+02-08 19:44:23 root 332:updating GUI message: 'Replicating drawings'
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1187:Replicating drawings
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Single-Cell-Charger3']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Single-Cell-Charger4']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['Single-Cell-Charger5']
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 256:Replication complete
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 259:Letting the user know there are some issues with replicated design
+02-08 19:44:23 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 263:Looks like the design has an exotic connectivity that the plugin might not handle properly
+ Make sure that you check the connectivity around:
+Footprint R48, pad 1
+Footprint R49, pad 2
+Footprint C27, pad 2
+Footprint U15, pad 9
+Footprint R46, pad 2
+Footprint C28, pad 1
+Footprint U14, pad 7
+Footprint JP6, pad 1
+Footprint U15, pad 4
+Footprint C26, pad 2
+
