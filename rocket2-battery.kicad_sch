@@ -684,35 +684,29 @@
         )
       )
     )
-    (symbol "Simulation_SPICE:PMOS" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "Q" (at 5.08 1.27 0)
+    (symbol "Transistor_FET:SiSS27DN" (pin_numbers hide) (in_bom yes) (on_board yes)
+      (property "Reference" "Q" (at 5.08 1.905 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "PMOS" (at 5.08 -1.27 0)
+      (property "Value" "SiSS27DN" (at 5.08 0 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "" (at 5.08 2.54 0)
+      (property "Footprint" "Package_SO:Vishay_PowerPAK_1212-8_Single" (at 5.08 -1.905 0)
+        (effects (font (size 1.27 1.27) italic) (justify left) hide)
+      )
+      (property "Datasheet" "http://www.vishay.com/docs/62847/siss27dn.pdf" (at 0 0 90)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "ki_keywords" "P-Channel MOSFET" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf" (at 0 -12.7 0)
+      (property "ki_description" "-50A Id, -30V Vds, P-Channel MOSFET, PowerPAK 1212-8 Single" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Sim.Device" "PMOS" (at 0 -17.145 0)
+      (property "ki_fp_filters" "Vishay*PowerPAK*1212*Single*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Sim.Type" "VDMOS" (at 0 -19.05 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Pins" "1=D 2=G 3=S" (at 0 -15.24 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "P-MOSFET transistor, drain/source/gate" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PMOS_0_1"
+      (symbol "SiSS27DN_0_1"
         (polyline
           (pts
             (xy 0.254 0)
@@ -823,18 +817,26 @@
           (fill (type outline))
         )
       )
-      (symbol "PMOS_1_1"
-        (pin passive line (at 2.54 5.08 270) (length 2.54)
-          (name "D" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -5.08 0 0) (length 2.54)
-          (name "G" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
+      (symbol "SiSS27DN_1_1"
         (pin passive line (at 2.54 -5.08 90) (length 2.54)
           (name "S" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 -5.08 90) (length 2.54) hide
+          (name "S" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 -5.08 90) (length 2.54) hide
+          (name "S" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "G" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 5.08 270) (length 2.54)
+          (name "D" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1453,6 +1455,9 @@
   (junction (at 74.93 138.43) (diameter 0) (color 0 0 0 0)
     (uuid 0db6f2c7-e9dc-4bc9-b438-c5640e10a70f)
   )
+  (junction (at 252.73 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid 0f1219ce-a4b3-409c-8776-d958c9bfecd9)
+  )
   (junction (at 213.36 156.21) (diameter 0) (color 0 0 0 0)
     (uuid 10b72fe1-1973-4367-8154-e6e465082f93)
   )
@@ -1528,9 +1533,6 @@
   (junction (at 22.86 31.75) (diameter 0) (color 0 0 0 0)
     (uuid 7276391c-7a00-40a7-b9b9-b8565a645bb6)
   )
-  (junction (at 184.15 111.76) (diameter 0) (color 0 0 0 0)
-    (uuid 727e09ee-be25-483d-b3cd-a10a339070dd)
-  )
   (junction (at 237.49 111.76) (diameter 0) (color 0 0 0 0)
     (uuid 72f5d2a1-4c79-41e5-8365-a4addb09848f)
   )
@@ -1540,8 +1542,8 @@
   (junction (at 31.75 129.54) (diameter 0) (color 0 0 0 0)
     (uuid 748e87af-cb01-49af-af84-f4fd6d7c3f9d)
   )
-  (junction (at 252.73 111.76) (diameter 0) (color 0 0 0 0)
-    (uuid 7859d202-8323-4147-810a-7fc7fa793373)
+  (junction (at 184.15 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid 75f8e7b3-da47-4d53-b312-6616fc6fa4fb)
   )
   (junction (at 86.36 31.75) (diameter 0) (color 0 0 0 0)
     (uuid 78bffce8-b52b-4ff4-a752-a8f292674602)
@@ -1729,7 +1731,7 @@
     (stroke (width 0) (type default))
     (uuid 12ad970a-1935-40a9-83fd-2b7c223cc39a)
   )
-  (wire (pts (xy 184.15 111.76) (xy 186.69 111.76))
+  (wire (pts (xy 168.91 111.76) (xy 184.15 111.76))
     (stroke (width 0) (type default))
     (uuid 13b90c48-6314-4904-9278-025d8d339025)
   )
@@ -1757,7 +1759,7 @@
     (stroke (width 0) (type default))
     (uuid 1bf3a52d-d680-478c-b03c-b01e6b0c70c2)
   )
-  (wire (pts (xy 252.73 111.76) (xy 255.27 111.76))
+  (wire (pts (xy 237.49 111.76) (xy 252.73 111.76))
     (stroke (width 0) (type default))
     (uuid 1d287114-b702-4b00-9531-0f54b3e7b792)
   )
@@ -1914,10 +1916,6 @@
     (stroke (width 0) (type default))
     (uuid 54b5a1ef-93a4-411f-8646-f38b68b4bd7c)
   )
-  (wire (pts (xy 237.49 111.76) (xy 252.73 111.76))
-    (stroke (width 0) (type default))
-    (uuid 599960cd-b0c8-4b7b-8257-f13316fc0701)
-  )
   (wire (pts (xy 213.36 156.21) (xy 213.36 161.29))
     (stroke (width 0) (type default))
     (uuid 5bdb25d8-ec12-4c34-855f-b2670a740dc9)
@@ -2019,10 +2017,6 @@
     (stroke (width 0) (type default))
     (uuid 86390eb9-e70a-4d49-b2ae-53fa15973edd)
   )
-  (wire (pts (xy 176.53 116.84) (xy 176.53 123.19))
-    (stroke (width 0) (type default))
-    (uuid 866a732d-ca7b-4f97-9a48-353b8579f5a6)
-  )
   (wire (pts (xy 22.86 167.64) (xy 35.56 167.64))
     (stroke (width 0) (type default))
     (uuid 888d17bf-6ed7-4ab6-8591-d9e5a7430630)
@@ -2043,7 +2037,7 @@
     (stroke (width 0) (type default))
     (uuid 8d4b09c0-597d-4a61-949b-8238a53dfe2e)
   )
-  (wire (pts (xy 186.69 134.62) (xy 186.69 111.76))
+  (wire (pts (xy 186.69 111.76) (xy 186.69 134.62))
     (stroke (width 0) (type default))
     (uuid 8da9325d-9b4a-4683-9490-b244f4bf87e8)
   )
@@ -2086,6 +2080,10 @@
   (wire (pts (xy 266.7 123.19) (xy 269.24 123.19))
     (stroke (width 0) (type default))
     (uuid 955e37ad-5c1c-4159-baf9-6299bd47ba0a)
+  )
+  (wire (pts (xy 252.73 111.76) (xy 255.27 111.76))
+    (stroke (width 0) (type default))
+    (uuid 95bddbd8-25e0-493e-8b66-ee25b541c994)
   )
   (wire (pts (xy 22.86 54.61) (xy 22.86 77.47))
     (stroke (width 0) (type default))
@@ -2359,6 +2357,10 @@
     (stroke (width 0) (type default))
     (uuid dfeecd23-a675-4352-87ca-4df354e35fe9)
   )
+  (wire (pts (xy 176.53 116.84) (xy 176.53 123.19))
+    (stroke (width 0) (type default))
+    (uuid e13bc851-9ca3-4e6c-bfd8-6fb44dc1d548)
+  )
   (wire (pts (xy 241.3 49.53) (xy 243.84 49.53))
     (stroke (width 0) (type default))
     (uuid e13c8722-3122-40f5-b231-991892b91d95)
@@ -2384,10 +2386,6 @@
     (stroke (width 0) (type default))
     (uuid e3c7c836-a264-4850-8f17-04d78c4c1e49)
   )
-  (wire (pts (xy 168.91 111.76) (xy 184.15 111.76))
-    (stroke (width 0) (type default))
-    (uuid e4de7d0d-61a0-47ec-8c78-d4db96b765f2)
-  )
   (wire (pts (xy 157.48 129.54) (xy 158.75 129.54))
     (stroke (width 0) (type default))
     (uuid ea5f66af-17f2-4e58-b254-ba91081671cb)
@@ -2407,6 +2405,10 @@
   (wire (pts (xy 31.75 152.4) (xy 39.37 152.4))
     (stroke (width 0) (type default))
     (uuid edeecfe5-f9df-4b29-90a3-6f5d2b80a7fa)
+  )
+  (wire (pts (xy 184.15 111.76) (xy 186.69 111.76))
+    (stroke (width 0) (type default))
+    (uuid eec56b5b-8a69-47d5-9a1a-a2e5e8a43f37)
   )
   (wire (pts (xy 182.88 96.52) (xy 185.42 96.52))
     (stroke (width 0) (type default))
@@ -3036,7 +3038,7 @@
   (symbol (lib_id "power:GND") (at 261.62 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0e5a5aa9-cebd-429a-aeb3-9be49fbc0ac0)
-    (property "Reference" "#PWR038" (at 261.62 31.75 0)
+    (property "Reference" "#PWR039" (at 261.62 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 261.62 29.21 0)
@@ -3052,7 +3054,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -3066,7 +3068,7 @@
   (symbol (lib_id "power:GND") (at 190.5 137.16 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 11c4eccd-ed42-406d-9d53-037366b44260)
-    (property "Reference" "#PWR044" (at 184.15 137.16 0)
+    (property "Reference" "#PWR017" (at 184.15 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 194.31 135.89 90)
@@ -3082,7 +3084,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -3224,7 +3226,7 @@
   (symbol (lib_id "power:GND") (at 274.32 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1b7b155b-411c-4c4e-9176-64546039610e)
-    (property "Reference" "#PWR040" (at 274.32 31.75 0)
+    (property "Reference" "#PWR041" (at 274.32 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 274.32 29.21 0)
@@ -3240,7 +3242,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -3254,7 +3256,7 @@
   (symbol (lib_id "power:GND") (at 237.49 93.98 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ca94cb9-0924-4d7e-a853-2ad2222ef0a3)
-    (property "Reference" "#PWR029" (at 243.84 93.98 0)
+    (property "Reference" "#PWR030" (at 243.84 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 242.57 93.98 90)
@@ -3270,7 +3272,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -3497,7 +3499,7 @@
   (symbol (lib_id "power:GND") (at 223.52 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d621a40-c4f3-463b-bbd0-46dd4b424d8d)
-    (property "Reference" "#PWR024" (at 223.52 31.75 0)
+    (property "Reference" "#PWR025" (at 223.52 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.52 29.21 0)
@@ -3513,7 +3515,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -3592,7 +3594,7 @@
   (symbol (lib_id "power:+3.3V") (at 223.52 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 34dcde1f-89d2-484b-bbae-90f1f8a5c9f1)
-    (property "Reference" "#PWR023" (at 223.52 24.13 0)
+    (property "Reference" "#PWR024" (at 223.52 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 223.52 16.51 0)
@@ -3608,7 +3610,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -3683,39 +3685,6 @@
       (project "rocket2-trs"
         (path "/f40df73a-33db-451b-892b-c732f49623c2"
           (reference "C2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Simulation_SPICE:PMOS") (at 181.61 129.54 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 489d8c13-028e-4491-832c-f187cb86afdb)
-    (property "Reference" "Q4" (at 187.96 128.905 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "PMOS" (at 187.96 131.445 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-3" (at 186.69 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP510DL.pdf" (at 181.61 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Diodes Inc" (at 181.61 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part #" "DMP510DL-7" (at 181.61 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 13f2bc1c-1bf2-4f1a-8650-e196b009c67d))
-    (pin "2" (uuid b09765af-8143-4a69-8a24-4304d11ac5a3))
-    (pin "3" (uuid bf78cc54-fe8b-4628-bcfc-8fa1d8185954))
-    (instances
-      (project "rocket2-battery"
-        (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "Q4") (unit 1)
         )
       )
     )
@@ -3876,7 +3845,7 @@
   (symbol (lib_id "power:GND") (at 255.27 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5048ac07-e95d-44a9-875b-8c3c2ad95700)
-    (property "Reference" "#PWR036" (at 255.27 102.87 0)
+    (property "Reference" "#PWR037" (at 255.27 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 255.27 100.33 0)
@@ -3892,7 +3861,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -4040,7 +4009,7 @@
   (symbol (lib_id "power:+3.3V") (at 248.92 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 573a1ebb-ce5c-4d7d-af69-971e9988cf26)
-    (property "Reference" "#PWR033" (at 248.92 24.13 0)
+    (property "Reference" "#PWR034" (at 248.92 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 248.92 16.51 0)
@@ -4056,7 +4025,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -4070,7 +4039,7 @@
   (symbol (lib_id "power:GND") (at 241.3 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 57971927-a240-4cdb-aee9-8cec65b354f3)
-    (property "Reference" "#PWR031" (at 241.3 58.42 0)
+    (property "Reference" "#PWR032" (at 241.3 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 241.3 55.88 0)
@@ -4086,7 +4055,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -4332,7 +4301,7 @@
   (symbol (lib_id "power:GND") (at 274.32 156.21 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7587afdd-06e1-4acb-9fbd-1d2528623198)
-    (property "Reference" "#PWR041" (at 280.67 156.21 0)
+    (property "Reference" "#PWR042" (at 280.67 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 278.13 156.845 90)
@@ -4348,7 +4317,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -4357,7 +4326,7 @@
   (symbol (lib_id "power:+3.3V") (at 275.59 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7895785f-7cc2-4b4a-8b1f-8b94bf69b9ab)
-    (property "Reference" "#PWR042" (at 275.59 62.23 0)
+    (property "Reference" "#PWR043" (at 275.59 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 275.59 54.61 0)
@@ -4373,7 +4342,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -4387,7 +4356,7 @@
   (symbol (lib_id "power:+3.3V") (at 261.62 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7a4379cb-f3ea-4a34-8a92-739c5a4ac4ef)
-    (property "Reference" "#PWR037" (at 261.62 24.13 0)
+    (property "Reference" "#PWR038" (at 261.62 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 261.62 16.51 0)
@@ -4403,7 +4372,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -4439,39 +4408,6 @@
     )
   )
 
-  (symbol (lib_id "Simulation_SPICE:PMOS") (at 181.61 116.84 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8529a213-822a-4cba-85f5-12308ff37551)
-    (property "Reference" "Q3" (at 187.96 117.475 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "PMOS" (at 187.96 114.935 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-3" (at 186.69 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP510DL.pdf" (at 181.61 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Diodes Inc" (at 181.61 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part #" "DMP510DL-7" (at 181.61 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 150dbb90-d80f-4f44-9531-a78642c6a92d))
-    (pin "2" (uuid 23c5f7fa-ad6f-4333-9645-80e5ba57f37b))
-    (pin "3" (uuid b63049be-a4d0-4ebe-b296-09e80d86b036))
-    (instances
-      (project "rocket2-battery"
-        (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "Q3") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+24V") (at 168.91 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 87636e14-3597-4737-9553-881c1948f1cb)
@@ -4500,7 +4436,7 @@
   (symbol (lib_id "power:GND") (at 237.49 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8e17a094-07e5-47b4-aa79-0e47f63b296c)
-    (property "Reference" "#PWR030" (at 237.49 146.05 0)
+    (property "Reference" "#PWR031" (at 237.49 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 237.49 144.78 0)
@@ -4516,7 +4452,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -4695,7 +4631,7 @@
   (symbol (lib_id "power:GND") (at 248.92 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 980123f0-214e-4a74-b57c-03b56dcfb4de)
-    (property "Reference" "#PWR034" (at 248.92 31.75 0)
+    (property "Reference" "#PWR035" (at 248.92 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 248.92 29.21 0)
@@ -4711,7 +4647,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -4725,7 +4661,7 @@
   (symbol (lib_id "power:GND") (at 227.33 156.21 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9824aec3-29f3-48bc-9391-8be90b3e19f8)
-    (property "Reference" "#PWR026" (at 233.68 156.21 0)
+    (property "Reference" "#PWR027" (at 233.68 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 231.14 156.845 90)
@@ -4741,7 +4677,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -4778,7 +4714,7 @@
   (symbol (lib_id "power:GND") (at 222.25 118.11 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 99010a43-e409-488b-b89e-df1c8fd7d7c2)
-    (property "Reference" "#PWR022" (at 215.9 118.11 0)
+    (property "Reference" "#PWR023" (at 215.9 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 218.44 118.745 90)
@@ -4794,7 +4730,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -4803,7 +4739,7 @@
   (symbol (lib_id "power:GND") (at 210.82 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f641c8c-2f9c-483f-9cc1-f9551d1d3f48)
-    (property "Reference" "#PWR019" (at 210.82 31.75 0)
+    (property "Reference" "#PWR020" (at 210.82 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 210.82 29.21 0)
@@ -4819,7 +4755,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -4857,6 +4793,41 @@
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
           (reference "D4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Transistor_FET:SiSS27DN") (at 250.19 129.54 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a027adc6-f7f5-4559-8987-6519ba4da8f5)
+    (property "Reference" "Q8" (at 256.54 128.905 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "PMOS" (at 256.54 131.445 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_SO:Vishay_PowerPAK_1212-8_Single" (at 255.27 131.445 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/62895/si7315dn.pdf" (at 250.19 129.54 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Manufacturer" "Vishay Siliconix" (at 250.19 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part #" "SI7315DN-T1-GE3" (at 250.19 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 86b0b39b-9073-476d-a70c-15a79054e13d))
+    (pin "2" (uuid cf869f8e-54e3-4a45-83c3-52adcf1227c2))
+    (pin "3" (uuid 2a76b87f-bd8d-403a-a77e-914a70c527e1))
+    (pin "4" (uuid 99881079-c1b4-4a86-b494-d397461f0d72))
+    (pin "5" (uuid da546a84-e12a-4597-ba83-324ab8e9359c))
+    (instances
+      (project "rocket2-battery"
+        (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
+          (reference "Q8") (unit 1)
         )
       )
     )
@@ -4923,10 +4894,45 @@
     )
   )
 
+  (symbol (lib_id "Transistor_FET:SiSS27DN") (at 250.19 116.84 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a7ce9e06-8c8f-442f-9a47-bef7ffb86b20)
+    (property "Reference" "Q7" (at 256.54 117.475 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "PMOS" (at 256.54 114.935 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_SO:Vishay_PowerPAK_1212-8_Single" (at 255.27 114.935 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/62895/si7315dn.pdf" (at 250.19 116.84 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Manufacturer" "Vishay Siliconix" (at 250.19 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part #" "SI7315DN-T1-GE3" (at 250.19 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4af26b13-ae1b-420d-80e9-0a50a0211a11))
+    (pin "2" (uuid 57ad197f-7b9f-4b5e-888e-99f8a8d0d675))
+    (pin "3" (uuid a2064491-8ff1-4804-a049-b3bdf44550fe))
+    (pin "4" (uuid b6ca1cd4-7833-4273-b091-c2ae84d14b96))
+    (pin "5" (uuid 74bdfe29-606f-447c-96cc-b727c9a7b020))
+    (instances
+      (project "rocket2-battery"
+        (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
+          (reference "Q7") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "pkl_misc:PAD_SMD") (at 204.47 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7d21cf7-1ac2-4fa1-93c9-28272aa17449)
-    (property "Reference" "P3" (at 207.01 136.525 0)
+    (property "Reference" "P5" (at 207.01 136.525 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
     (property "Value" "PAD_SMD" (at 207.01 139.065 0)
@@ -4945,7 +4951,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "P3") (unit 1)
+          (reference "P5") (unit 1)
         )
       )
     )
@@ -4996,7 +5002,7 @@
   (symbol (lib_id "power:GND") (at 224.79 62.23 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ac8dce61-53d6-4490-abf8-06a1d18d80c7)
-    (property "Reference" "#PWR025" (at 231.14 62.23 0)
+    (property "Reference" "#PWR026" (at 231.14 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 228.6 62.23 90)
@@ -5012,7 +5018,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -5026,7 +5032,7 @@
   (symbol (lib_id "pkl_misc:PAD_SMD") (at 161.29 191.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid acef190b-6034-418b-aa1f-d6836a9642cc)
-    (property "Reference" "P6" (at 163.83 191.135 0)
+    (property "Reference" "P4" (at 163.83 191.135 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
     (property "Value" "PAD_SMD" (at 163.83 193.675 0)
@@ -5045,7 +5051,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "P6") (unit 1)
+          (reference "P4") (unit 1)
         )
       )
     )
@@ -5054,7 +5060,7 @@
   (symbol (lib_id "power:+3.3V") (at 210.82 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid af14464c-ddc1-4639-b23b-ec5924598693)
-    (property "Reference" "#PWR018" (at 210.82 24.13 0)
+    (property "Reference" "#PWR019" (at 210.82 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 210.82 16.51 0)
@@ -5070,7 +5076,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -5116,7 +5122,7 @@
   (symbol (lib_id "power:+24V") (at 200.66 156.21 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b75745e7-33ed-49c2-9b36-d8585b21d7d6)
-    (property "Reference" "#PWR017" (at 204.47 156.21 0)
+    (property "Reference" "#PWR018" (at 204.47 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (at 196.85 156.845 90)
@@ -5132,7 +5138,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -5141,7 +5147,7 @@
   (symbol (lib_id "power:+3.3V") (at 243.84 39.37 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b84320c4-aea1-4fc5-a799-cef450468f30)
-    (property "Reference" "#PWR032" (at 247.65 39.37 0)
+    (property "Reference" "#PWR033" (at 247.65 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 240.03 39.37 90)
@@ -5157,12 +5163,47 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
       (project "rocket2-trs"
         (path "/f40df73a-33db-451b-892b-c732f49623c2"
           (reference "#PWR034") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Transistor_FET:SiSS27DN") (at 181.61 116.84 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b8d4e266-0382-4614-8af4-4f2e0ceb4042)
+    (property "Reference" "Q3" (at 187.96 117.475 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "PMOS" (at 187.96 114.935 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_SO:Vishay_PowerPAK_1212-8_Single" (at 186.69 114.935 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/62895/si7315dn.pdf" (at 181.61 116.84 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Manufacturer" "Vishay Siliconix" (at 181.61 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part #" "SI7315DN-T1-GE3" (at 181.61 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid afc776ef-090e-4ea1-a1ad-f042b55bd0a2))
+    (pin "2" (uuid 43bef775-6bc7-4354-932d-27ffb853d327))
+    (pin "3" (uuid 8a0f9ce5-e8f8-440e-be31-07d8be8f239c))
+    (pin "4" (uuid 96ca249a-23f2-4e5d-8e83-941bbd7e0dc6))
+    (pin "5" (uuid 410658d4-a84d-49d0-86ab-9a284c56d08c))
+    (instances
+      (project "rocket2-battery"
+        (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
+          (reference "Q3") (unit 1)
         )
       )
     )
@@ -5228,34 +5269,36 @@
     )
   )
 
-  (symbol (lib_id "Simulation_SPICE:PMOS") (at 250.19 129.54 0) (unit 1)
+  (symbol (lib_id "Transistor_FET:SiSS27DN") (at 181.61 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c79cf2b3-e34f-46d7-80c7-9ac956fdbf0e)
-    (property "Reference" "Q8" (at 256.54 128.905 0)
+    (uuid c283190a-52bd-4826-83b9-c9c24b8e5d4d)
+    (property "Reference" "Q4" (at 187.96 128.905 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "PMOS" (at 256.54 131.445 0)
+    (property "Value" "PMOS" (at 187.96 131.445 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-3" (at 255.27 127 0)
+    (property "Footprint" "Package_SO:Vishay_PowerPAK_1212-8_Single" (at 186.69 131.445 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/62895/si7315dn.pdf" (at 181.61 129.54 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Manufacturer" "Vishay Siliconix" (at 181.61 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP510DL.pdf" (at 250.19 142.24 0)
+    (property "Part #" "SI7315DN-T1-GE3" (at 181.61 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer" "Diodes Inc" (at 250.19 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part #" "DMP510DL-7" (at 250.19 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b01d10fa-f5a0-4d85-ba65-fe920de87699))
-    (pin "2" (uuid d92acaf3-0cae-4aaa-b878-c878f95c608e))
-    (pin "3" (uuid 748ccf21-61a5-46f7-b7bc-a2ad44a40c9c))
+    (pin "1" (uuid 411e85a1-b1e6-4e65-ad40-ed9504891a55))
+    (pin "2" (uuid 11396af9-dbd9-4e20-adcd-0d5d2f447bf7))
+    (pin "3" (uuid dce6ebf4-4fc3-4d16-a9ff-07a6782e9800))
+    (pin "4" (uuid b5be2af5-a824-4682-aa28-6d2fff5d79ff))
+    (pin "5" (uuid b950e46d-e157-42f1-bcb7-d04cdaa695ed))
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "Q8") (unit 1)
+          (reference "Q4") (unit 1)
         )
       )
     )
@@ -5328,7 +5371,7 @@
   (symbol (lib_id "pkl_misc:PAD_SMD") (at 161.29 186.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4c92438-be77-46c9-8b75-36c410e99d19)
-    (property "Reference" "P5" (at 163.83 186.055 0)
+    (property "Reference" "P3" (at 163.83 186.055 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
     (property "Value" "PAD_SMD" (at 163.83 188.595 0)
@@ -5347,7 +5390,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "P5") (unit 1)
+          (reference "P3") (unit 1)
         )
       )
     )
@@ -5420,7 +5463,7 @@
   (symbol (lib_id "power:GND") (at 275.59 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d8969ff4-d5d8-4a9f-a0ca-9b5e9fce8b61)
-    (property "Reference" "#PWR043" (at 275.59 69.85 0)
+    (property "Reference" "#PWR044" (at 275.59 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 275.59 67.31 0)
@@ -5436,7 +5479,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -5507,7 +5550,7 @@
   (symbol (lib_id "pkl_misc:PAD_SMD") (at 204.47 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dccf8503-dbdc-4fc8-a769-7db03380243b)
-    (property "Reference" "P7" (at 207.01 141.605 0)
+    (property "Reference" "P6" (at 207.01 141.605 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
     (property "Value" "PAD_SMD" (at 207.01 144.145 0)
@@ -5526,7 +5569,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "P7") (unit 1)
+          (reference "P6") (unit 1)
         )
       )
     )
@@ -5659,7 +5702,7 @@
   (symbol (lib_id "power:+3.3V") (at 255.27 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea729e9c-2e0d-4cdf-877c-c59b4a674a39)
-    (property "Reference" "#PWR035" (at 255.27 64.77 0)
+    (property "Reference" "#PWR036" (at 255.27 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 255.27 57.15 0)
@@ -5675,7 +5718,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -5689,7 +5732,7 @@
   (symbol (lib_id "power:+3.3V") (at 274.32 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ebbbab06-a59e-4f0b-a9b5-5a85269c7729)
-    (property "Reference" "#PWR039" (at 274.32 24.13 0)
+    (property "Reference" "#PWR040" (at 274.32 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 274.32 16.51 0)
@@ -5705,7 +5748,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -5747,7 +5790,7 @@
   (symbol (lib_id "power:GND") (at 212.09 88.9 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f01d1f45-b89e-4315-b4ed-ccc0a76471c7)
-    (property "Reference" "#PWR020" (at 205.74 88.9 0)
+    (property "Reference" "#PWR021" (at 205.74 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 207.01 88.9 90)
@@ -5763,7 +5806,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
       (project "EVE"
@@ -5814,7 +5857,7 @@
   (symbol (lib_id "power:+3.3V") (at 236.22 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f151b043-3d64-48d6-ab3b-39afff4bc7e5)
-    (property "Reference" "#PWR027" (at 236.22 24.13 0)
+    (property "Reference" "#PWR028" (at 236.22 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 236.22 16.51 0)
@@ -5830,7 +5873,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -5888,7 +5931,7 @@
   (symbol (lib_id "power:GND") (at 236.22 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4ba562f-ec5e-4499-8980-646576d96de7)
-    (property "Reference" "#PWR028" (at 236.22 31.75 0)
+    (property "Reference" "#PWR029" (at 236.22 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 236.22 29.21 0)
@@ -5904,7 +5947,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
       (project "rocket2-trs"
@@ -5950,7 +5993,7 @@
   (symbol (lib_id "power:+3.3V") (at 217.17 88.9 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb24209e-b108-4710-aa25-4526d290adde)
-    (property "Reference" "#PWR021" (at 213.36 88.9 0)
+    (property "Reference" "#PWR022" (at 213.36 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 223.52 88.9 90)
@@ -5966,7 +6009,7 @@
     (instances
       (project "rocket2-battery"
         (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
       (project "EVE"
@@ -6014,39 +6057,6 @@
       (project "rocket2-trs"
         (path "/f40df73a-33db-451b-892b-c732f49623c2"
           (reference "C6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Simulation_SPICE:PMOS") (at 250.19 116.84 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid fee47f0d-a5b8-46e4-aac2-973ee7eea087)
-    (property "Reference" "Q7" (at 256.54 117.475 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "PMOS" (at 256.54 114.935 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-3" (at 255.27 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP510DL.pdf" (at 250.19 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Diodes Inc" (at 250.19 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part #" "DMP510DL-7" (at 250.19 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4ec70d11-a03f-4377-a6ff-519211f52fde))
-    (pin "2" (uuid a85af4b8-9b41-4f79-b2c7-809e5fcc4f41))
-    (pin "3" (uuid 501ff4be-d109-4c2c-8304-3b6a9d6cab58))
-    (instances
-      (project "rocket2-battery"
-        (path "/453543af-7e3c-49a0-a644-4bd49c4f86f8"
-          (reference "Q7") (unit 1)
         )
       )
     )
